@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahma Aisyah - Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="logo">Raisya.portofolio</div>
+ <ul class="nav-links">
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#keahlian">Keahlian</a></li>
+    <li><a href="#proyek">Proyek</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+    <button id="toggle-theme" title="Ganti mode gelap/terang"> 🌙 </button>
+      </button>
+        </nav>
+  <!-- ===== HERO / PERKENALAN ===== -->
+  <div class="hero" id="beranda">
+    <img src="raisa.jpg" alt="Foto Profil Rahma">
+    <h1>Rahma Aisyah Ramadhan Putri</h1>
+    <div class="role">Mahasiswi Prodi Informatika - STIKOM EL RAHMA</div>
+    <p class="bio">
+      Halo! Saya suka menggambar digital dan membuat desain-desain kreatif.
+      Saya berharap bisa menjadi desainer grafis profesional di masa depan.
+    </p>
+  </div>  
+
+  <section id="tentang">
+  <h2>Tentang Saya</h2>
+  <p>
+    Saya Rahma Aisyah Ramadhan Putri, mahasiswi Prodi Informatika di STIKOM EL RAHMA.
+    Saya punya ketertarikan besar di bidang desain grafis, terutama menggambar digital
+    dan membuat sketsa. 
+  </p>
+  <p>
+    Lewat portofolio ini, saya ingin menunjukkan proses belajar saya di dunia teknologi
+    sambil tetap mengejar minat saya di bidang desain kreatif.
+  </p>
+</section>
+
+
+  <!-- ===== KEAHLIAN (diisi otomatis lewat JS, lihat script.js) ===== -->
+   <section id="keahlian">
+<h2>Keahlian & Hobi</h2>
+    <div class="skills">
+    </div>
+</section>
+
+  <!-- ===== PROYEK (BARU: diambil dari Appwrite) ===== -->
+     
+    </section>  <section id="proyek"> 
+  
+     <h2>Proyek Saya</h2>
+    <div id="proyek-container">
+      <p class="loading-text">Memuat data proyek...</p>
+      </div>
+  </section>
+
+  <!-- ===== KONTAK ===== -->
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <div class="contact-card">
+      <p>Mau kenalan lebih lanjut? Sapa aku lewat salah satu di bawah ini!</p>
+
+      <a class="btn" href="https://www.instagram.com/rahma.aisyh?igsh=bXR4bWJ5NmtyMDYw" target="_blank">
+        Instagram Saya
+      </a>
+      <a class="btn" href="https://wa.me/62895328919522" target="_blank">
+        WhatsApp Saya
+      </a>
+      <a class="btn" href="https://id.linkedin.com/in/rahma-aisyah-920568420" target="_blank">
+        LinkedIn Saya
+      </a>
+
+      <!-- Form kirim pesan ( insert ke tabel appwrite) -->
+      
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Nama kamu" required>
+    <textarea id="message" placeholder="Pesan kamu" required></textarea>
+    <button type="submit" class="btn">Kirim Pesan</button>
+</form>
+      <p id="form-status"></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Rahma Aisyah Ramadhan Putri
+  </footer>
+
+  <!-- WAJIB type="module" karena script.js pakai sintaks import -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

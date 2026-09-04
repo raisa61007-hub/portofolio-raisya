@@ -1,0 +1,260 @@
+/* ===== VARIABEL WARNA ===== */
+:root {
+  --bg: #faf7f2;
+  --card: #ce9f97;
+  --text: #0a0909;
+  --muted: #473939;
+  --accent: #a85a3f;
+  --accent-soft: #f0ded1;
+  --border: #e8e0d5;
+}
+
+[data-theme="dark"] {
+  --bg: #080808;
+  --card: #e9d4cb;
+  --text: #423b3b;
+  --muted: #72685e;
+  --accent: #ac5c2d;
+  --accent-soft: #807065;
+  --border: #c9b9a6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+#toggle-theme {
+  border: 1px solid var(--border);
+  background: var(--accent-soft);
+  color: var(--text);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* ===== HERO / PERKENALAN ===== */
+.hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0ded1, #e0834f);
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0 0 6px;
+}
+
+.hero .role {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.hero p.bio {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ===== SECTION UMUM ===== */
+
+#tentang {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#tentang p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+
+section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-chip {
+  background: var(--accent-soft);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+}
+
+/* ===== PROYEK (BARU: kartu data dari Supabase) ===== */
+#proyek-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.project-card h3 {
+  margin: 0 0 8px;
+  color: var(--accent);
+}
+
+.project-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.loading-text,
+.error-text {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.error-text {
+  color: #c0392b;
+}
+
+/* ===== KONTAK ===== */
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.contact-card a.btn {
+  display: inline-block;
+  margin-top: 12px;
+  margin-right: 8px;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Form kirim pesan */
+#contact-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+#contact-form input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+#contact-form button.btn {
+  margin-top: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#form-status {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}
