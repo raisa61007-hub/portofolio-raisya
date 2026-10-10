@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>My Webpage</title> 
+   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+ <style type="text/css"> 
+
+ .container { 
+width: 900px; 
+margin: 0 auto; 
+} 
+.header { 
+min-height: 50px;
+text-align: center; 
+    color: #a9542e;
+    font-size: 1.8rem;
+}
+ 
+.logo img { 
+width: 200px;
+} 
+.menu ul { 
+padding: 0; 
+} 
+.menu ul li { 
+display: inline-block; 
+position: relative; 
+} 
+.menu ul li a { 
+padding: 10px 20px; 
+text-decoration: none; 
+}
+ul.submenu { 
+background-color: #eee; 
+border: 1px solid #ccc; 
+text-align: left; 
+position: absolute; 
+top: 20px; 
+left: 0; 
+display: none;
+} 
+.menu ul li:hover ul.submenu { 
+display: block; 
+} 
+ul.submenu li { 
+display: block; 
+position: relative;
+} 
+ul.submenu li a { 
+display: block; 
+padding: 5px 10px; 
+color: #6b4423;
+    
+} 
+.content { 
+background-color: #ddd; 
+min-height: 500px; 
+overflow: auto;
+}
+.content h2 {
+    color: #dd7f5a;
+    border-left: 5px solid #dd7f5a;
+    padding-left: 10px;
+}
+
+.jumbotron { 
+font-family: 'Libre Caslon Condensed', serif;
+width: 100%; 
+padding: 90px 60px; 
+box-sizing: border-box; 
+text-align: center; 
+color: white; 
+background-color: #f7f2f2; 
+background-image:linear-gradient(rgba(116, 75, 43, 0.55), rgba(131, 88, 53, 0.55)),url('felix-jiricka-4LRtpfCBd3c-unsplash.jpg');
+background-size: cover;
+position: relative;
+}
+.jumbotron h2 {
+font-size: 2.2rem;
+margin-bottom: 10px;
+}
+.jumbotron p {
+font-size: 1.1rem;
+max-width: 600px;
+margin: 0 auto;
+}
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: black;
+opacity: 0.4;
+}
+.thumbnail { 
+background-color: white; 
+text-align: center;
+padding: 10px; 
+width: 225px; 
+margin: 10px; 
+float: left; 
+} 
+.thumbnail img { 
+width: 100%; 
+}
+  .thumbnail h3 {
+    margin: 10px 0 4px 0;
+    color: #6b4423;
+    font-size: 1rem;
+}
+.thumbnail p {
+    margin: 0;
+    color: #e07a3f;
+    font-weight: bold; }
+.thumbnail button {
+    margin-top: 8px;
+    background-color: #e07a3f;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.thumbnail button:hover {
+background-color: #a9542e;
+}
+.footer { 
+background-color: #ccc; 
+padding: 20px; 
+text-align: center; 
+} 
+</style> 
+</head> 
+<body> 
+<div class="container"> 
+  <div class="header"> 
+   <div class="logo">
+    <img src="logo store.png">
+    </div> 
+<div class="menu"> 
+   <ul> 
+   <li><a href="#">Home</a></li>
+   <li><a href="#">About</a> 
+  <ul class="submenu"> 
+    <li><a href="#">CV</a></li> 
+    <li><a href="#">Education</a></li> 
+    <li><a href="#">Portfolio</a></li> 
+ </ul> 
+</li> 
+<li><a href="#">Contact</a></li> 
+   </ul> 
+   </div> 
+
+</div>
+<div class="content"> 
+ <h2>Our Products</h2> 
+
+<div class="jumbotron"> 
+  <div class="overlay"></div>
+  <h2>Semua Kebutuhan Si Meong, Ada di Sini!🐱</h2>
+ <p>Dari makanan sehat, pasir wangi, sampai mainan kesukaan kucing kesayanganmu — belanja gampang, kucing happy!</p>
+</div> 
+
+<div class="thumbnail"> 
+      <img src="Cute Cats.png">
+      <h3>Dry food</h3>
+      <p>Rp 180.000</p>
+      <button>Beli</button>
+    </div>
+
+  <div class="thumbnail">
+      <img src="peralatan kitten.png">
+      <h3>Peralatan Kitten</h3>
+      <p>Rp 45.000</p>
+      <button>Beli</button>
+    </div>
+
+  <div class="thumbnail"> 
+   <img src="makanan basah kucing.png">
+   <h3>Wet Cat Food</h3>
+  <p>Rp 80.000</p>
+  <button>Beli</button>
+  </div>
+<div class="thumbnail">
+      <img src="pasir kucing.png">
+      <h3>Pasir Gumpal Wangi</h3>
+      <p>Rp 45.000</p>
+      <button>Beli</button>
+</div>
+</div>
+<div class="footer">
+    <p>&copy; 2026 Meong Store — Semua Kebutuhan Kucingmu</p>
+  </div>
+</div>
+</body>
+
+</body> 
+</html> 
+

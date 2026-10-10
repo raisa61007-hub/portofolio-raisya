@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Meong Store - Kebutuhan Kucing</title>
+<style type="text/css">
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #fff8f0;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    background-color: #ffe8d6;
+    min-height: 50px;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .logo h1 {
+    margin: 5px 0;
+    color: #a9542e;
+    font-size: 1.8rem;
+  }
+  .logo span {
+    font-size: 1.5rem;
+  }
+  .menu ul {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  .menu ul li {
+    display: inline-block;
+    position: relative;
+  }
+  .menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #6b4423;
+    font-weight: bold;
+  }
+  .menu ul li a:hover {
+    color: #e07a3f;
+  }
+  ul.submenu {
+    background-color: #fff;
+    border: 1px solid #e3c9a8;
+    border-radius: 8px;
+    text-align: left;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block;
+  }
+  ul.submenu li {
+    display: block;
+  }
+  ul.submenu li a {
+    display: block;
+    padding: 8px 16px;
+    color: #6b4423;
+    font-weight: normal;
+  }
+  ul.submenu li a:hover {
+    background-color: #ffe8d6;
+  }
+
+  /* ===== JUMBOTRON ===== */
+  .jumbotron {
+    width: 100%;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background-color: #d98e5f;
+    background-image: linear-gradient(rgba(107,68,35,0.55), rgba(107,68,35,0.55)), url('https://via.placeholder.com/1200x400?text=Kucing+Lucu');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  .jumbotron h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .jumbotron p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* ===== CONTENT & PRODUCT GRID ===== */
+  .content {
+    background-color: #fff8f0;
+    min-height: 500px;
+    overflow: auto;
+    padding: 20px;
+  }
+  .content h2 {
+    color: #a9542e;
+    border-left: 5px solid #e07a3f;
+    padding-left: 10px;
+  }
+  .thumbnail {
+    background-color: white;
+    text-align: center;
+    padding: 12px;
+    width: 200px;
+    margin: 12px;
+    float: left;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
+  .thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  }
+  .thumbnail img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .thumbnail h3 {
+    margin: 10px 0 4px 0;
+    color: #6b4423;
+    font-size: 1rem;
+  }
+  .thumbnail p {
+    margin: 0;
+    color: #e07a3f;
+    font-weight: bold;
+  }
+  .thumbnail button {
+    margin-top: 8px;
+    background-color: #e07a3f;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .thumbnail button:hover {
+    background-color: #a9542e;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background-color: #a9542e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ===== HEADER ===== -->
+  <div class="header">
+    <div class="logo">
+      <h1>🐾 Meong Store</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Kategori</a>
+          <ul class="submenu">
+            <li><a href="#">Makanan</a></li>
+            <li><a href="#">Mainan</a></li>
+            <li><a href="#">Perawatan</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Promo</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="content">
+
+    <!-- ===== JUMBOTRON ===== -->
+    <div class="jumbotron">
+      <h2>Semua Kebutuhan Si Meong, Ada di Sini! 🐱</h2>
+      <p>Dari makanan sehat, pasir wangi, sampai kebutuhan kucing kesayanganmu — belanja gampang, kucing happy!</p>
+    </div>
+
+    <h2>Produk Kami</h2>
+
+    <div class="thumbnail">
+      <img src="https://via.placeholder.com/200x150?text=Makanan+Kering">
+      <h3>Makanan Kering Premium</h3>
+      <p>Rp 85.000</p>
+      <button>Beli</button>
+    </div>
+
+    <div class="thumbnail">
+      <img src="https://via.placeholder.com/200x150?text=Makanan+Basah">
+      <h3>Makanan Basah Sachet</h3>
+      <p>Rp 12.000</p>
+      <button>Beli</button>
+    </div>
+
+    <div class="thumbnail">
+      <img src="https://via.placeholder.com/200x150?text=Pasir+Kucing">
+      <h3>Pasir Gumpal Wangi</h3>
+      <p>Rp 45.000</p>
+      <button>Beli</button>
+    </div>
+
+    <div class="thumbnail">
+      <img src="https://via.placeholder.com/200x150?text=Mainan+Bulu">
+      <h3>Mainan Bulu Ayun</h3>
+      <p>Rp 20.000</p>
+      <button>Beli</button>
+    </div>
+
+    <div class="thumbnail">
+      <img src="https://via.placeholder.com/200x150?text=Kalung+Lucu">
+      <h3>Kalung Kucing Lucu</h3>
+      <p>Rp 25.000</p>
+      <button>Beli</button>
+    </div>
+
+    <div class="thumbnail">
+      <img src="https://via.placeholder.com/200x150?text=Cat+Tower">
+      <h3>Cat Tower Mini</h3>
+      <p>Rp 350.000</p>
+      <button>Beli</button>
+    </div>
+
+    <div class="thumbnail">
+      <img src="https://via.placeholder.com/200x150?text=Sisir+Bulu">
+      <h3>Sisir Bulu Anti Rontok</h3>
+      <p>Rp 30.000</p>
+      <button>Beli</button>
+    </div>
+
+    <div class="thumbnail">
+      <img src="https://via.placeholder.com/200x150?text=Shampoo">
+      <h3>Shampoo Kucing Herbal</h3>
+      <p>Rp 28.000</p>
+      <button>Beli</button>
+    </div>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer">
+    <p>&copy; 2026 Meong Store — Semua Kebutuhan Kucingmu</p>
+  </div>
+
+</div>
+</body>
+</html>

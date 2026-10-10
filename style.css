@@ -1,5 +1,9 @@
 /* ===== VARIABEL WARNA ===== */
 :root {
+    --bg: #faf7f2;
+    --card: #ce9f97;
+}
+:root {
   --bg: #faf7f2;
   --card: #ce9f97;
   --text: #0a0909;
@@ -124,6 +128,12 @@ nav {
 }
 
 /* ===== SECTION UMUM ===== */
+
+.container {
+    max-width: 900px; /* atur lebar maksimal tampilan agar pas */
+    margin: 0 auto;   /* membuat seluruh tampilan pas di tengah layar */
+    padding: 20px;
+}
 
 #tentang {
   padding: 20px;
